@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js">
+
+</script>
+<link href="/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="business.css">
+<style>
+body {
+  font-family: jelle-roman;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: red;
+
+
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'jelle-roman';
+  text-align: center;
+  font-size: 75px;
+  color: #FFFFFF;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  color: #232323
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("jbphoto/jollyspag.jpg");
+}
+.second{
+  background-image: url("jbphoto/peachmangopie.jpg");
+}
+.dessert{
+  background-image: url("jbphoto/quench.png");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1> Jollibee </h1>
+<h2> HOME OF THE FAMOUS CHICKENJOY</h2>
+<div class="first">
+  <p> Jolly Spaghetti <span class="price">$10</span><br />
+  <small>This dish has an irresistible charm, undeniably captivating to any food lover. No matter the time or place, it stands out as the top choice. Always exciting, it offers a perfect balance between lavish indulgence and intimate satisfaction. From breakfast to late-night snacks, this culinary delight is always ready to impress. It's the perfect match for anyone seeking an extraordinary dining experience, consistently delivering an unforgettable taste. </small></p>
+</div>
+
+<div class="second">
+  <p> Peach Mango Pie <span class="price">$5</span><br />
+  <small>The peach mango pie is a captivating dessert that irresistibly draws you in with its sweet, tantalizing flavors. Its charm is so delightful that each bite feels like a summer paradise. This pie appeals to those with a taste for bold, rebellious flavors, offering a luxurious combination of juicy peaches and ripe mangoes. Despite any previous dessert disappointments, this pie stands out with its uniquely compelling taste. The experience of eating it is a mix of gastronomical delight and pure enjoyment, highlighted by the perfectly balanced sweetness and refreshing fruitiness.</small></p>
+</div>
+  
+<div class="dessert">
+  <p> Pineapple Quencher <span class="price">$3</span><br />
+  <small>The Pineapple Quencher is an absolute delight for those in need of a refreshing beverage. It combines the perfect balance of sweetness and chill, reminiscent of sipping on a Slurpee during a hot day. The drink is always icy and invigorating, with a vibrant pop that makes it irresistible even in the sun. It’s like finding a sweet treat in the fridge, adorned with a touch of elegance. The Pineapple Quencher not only cools you down but also melts your heart with its perfect blend of flavors, making it a favorite choice for any time of the day.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
